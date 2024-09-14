@@ -1,6 +1,10 @@
-import logo from "../assets/Finie_logo.svg"
 
-export default function LandingHeading() {
+
+type LogoProp = {
+  logo: string;
+};
+
+export default function LandingHeading({logo}: LogoProp) {
   return (
     <div className="font-dm-sans flex flex-col items-center justify-center min-h-screen text-center gap-6">
         <img 
